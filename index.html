@@ -6,19 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="icon" href="img/icon.png" type="Image/png">
-    <!-- CSS start here -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <!-- CSS end here -->
-    <!-- Google fonts start here -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
-    <!-- Google fonts end here -->
 </head>
 
 <body class="tictoc" style="overflow: visible;">
@@ -191,16 +187,12 @@
                     <img style="max-width: 100px;" src="/img/roxana.png" />
                 </a></li>
         </ul>
-        <!-- Social icons end here -->
-        <!-- Footer start here -->
         <footer class="fade-down animated fadeInDown">
             <p>© Copyright
                 <a href="http://www.creative-era.com" target="_blank">Thuận Phong</a>.
             </p>
         </footer>
-        <!-- Footer end here -->
     </section>
-    <!-- About start here -->
     <div class="modal fade bs-example-modal-lg" role="dialog" aria-hidden="true" data-keyboard="true"
         data-backdrop="static" tabindex="-1">
         <div class="madalData">
@@ -275,7 +267,36 @@
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0&appId=2544709002495271&autoLogAppEvents=1"
         nonce="1qNRHcTs"></script>
+<!-- Messenger Plugin chat Code -->
+<div id="fb-root"></div>
 
+<!-- Your Plugin chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "110712105416023");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v17.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 </body>
 
 </html>
