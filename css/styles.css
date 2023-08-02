@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Preloader */
 @font-face {
 	font-family: "SouthernAire";
@@ -27,8 +34,12 @@
 	width: 100%;
 }
 .homepage {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	min-height: 100vh;
 }
 #status {
@@ -55,8 +66,12 @@ body {
 	background-color: #f2f3f7;
 	font-weight: normal;
 	min-height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 33px 0 10px 0;
 }
 
@@ -181,7 +196,9 @@ h6.subTitle {
 	font-weight: normal !important;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -60%);
+	-webkit-transform: translate(-50%, -60%);
+	    -ms-transform: translate(-50%, -60%);
+	        transform: translate(-50%, -60%);
 }
 
 #days-title,
@@ -219,8 +236,6 @@ h6.subTitle {
 	height: 60px;
 	width: 100%;
 	padding: 0 22% 0 70px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
 	border-radius: 4px;
 	outline: none;
 }
@@ -242,8 +257,6 @@ h6.subTitle {
 	border: none;
 	background-color: #ff0000;
 	padding: 4px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
 	border-radius: 4px;
 }
 
@@ -261,8 +274,6 @@ h6.subTitle {
 	font-size: 20px;
 	border: none;
 	background-color: #ff382e;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
 	border-radius: 4px;
 	font-size: 20px;
 	color: #ffffff;
@@ -440,7 +451,8 @@ footer a:hover {
 .pop-up {
 	padding: 20px;
 	border-radius: 0;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 	background: none;
 	border: none;
 }
@@ -584,8 +596,6 @@ footer a:hover {
 	display: block;
 	width: 42px;
 	height: 42px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
 
@@ -609,9 +619,15 @@ footer a:hover {
 
 .madalData {
 	/* height: 100vh; */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 h6.subTitle.blackFont {
 	color: #000;
@@ -650,7 +666,10 @@ h6.subTitle.blackFont {
 }
 @media only screen and (max-device-width: 1150px) {
 	body {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 	.about-us a {
 		position: relative;
@@ -716,7 +735,9 @@ h6.subTitle.blackFont {
 		text-transform: uppercase;
 		font-family: "open sans";
 		left: 50%;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		        transform: translateX(-50%);
 	}
 	.contact-us a:after {
 		content: "Contact";
@@ -726,7 +747,9 @@ h6.subTitle.blackFont {
 		text-transform: uppercase;
 		font-family: "open sans";
 		left: 50%;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		        transform: translateX(-50%);
 	}
 	.main-wrapper {
 		padding: 50px 20px 0 20px;
@@ -898,7 +921,8 @@ h5 {
 }
 .action:hover,
 .action:focus {
-	animation: unset;
+	-webkit-animation: unset;
+	        animation: unset;
 	color: #ffcc00;
 	text-decoration: none;
 }
@@ -906,7 +930,9 @@ h5 {
 	position: absolute;
 	top: 0;
 	left: 50%;
-	transform: translate(-50%, -48%);
+	-webkit-transform: translate(-50%, -48%);
+	    -ms-transform: translate(-50%, -48%);
+	        transform: translate(-50%, -48%);
 	z-index: -1;
 	width: 250px;
 }
