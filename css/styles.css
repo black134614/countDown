@@ -38,8 +38,8 @@
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	min-height: 100vh;
 }
 #status {
@@ -70,8 +70,8 @@ body {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	padding: 33px 0 10px 0;
 }
 
@@ -197,8 +197,8 @@ h6.subTitle {
 	left: 50%;
 	top: 50%;
 	-webkit-transform: translate(-50%, -60%);
-	    -ms-transform: translate(-50%, -60%);
-	        transform: translate(-50%, -60%);
+	-ms-transform: translate(-50%, -60%);
+	transform: translate(-50%, -60%);
 }
 
 #days-title,
@@ -452,7 +452,7 @@ footer a:hover {
 	padding: 20px;
 	border-radius: 0;
 	-webkit-box-shadow: none;
-	        box-shadow: none;
+	box-shadow: none;
 	background: none;
 	border: none;
 }
@@ -623,11 +623,11 @@ footer a:hover {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 h6.subTitle.blackFont {
 	color: #000;
@@ -668,8 +668,8 @@ h6.subTitle.blackFont {
 	body {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
 	}
 	.about-us a {
 		position: relative;
@@ -736,8 +736,8 @@ h6.subTitle.blackFont {
 		font-family: "open sans";
 		left: 50%;
 		-webkit-transform: translateX(-50%);
-		    -ms-transform: translateX(-50%);
-		        transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
 	}
 	.contact-us a:after {
 		content: "Contact";
@@ -748,8 +748,8 @@ h6.subTitle.blackFont {
 		font-family: "open sans";
 		left: 50%;
 		-webkit-transform: translateX(-50%);
-		    -ms-transform: translateX(-50%);
-		        transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
 	}
 	.main-wrapper {
 		padding: 50px 20px 0 20px;
@@ -908,6 +908,11 @@ body {
 h5 {
 	font-family: "Pinyon Script", cursive;
 }
+h5.animate-typing {
+	font-size: 3.5vw;
+	font-weight: bold;
+	color: #ff3b30;
+}
 .action {
 	position: relative;
 	margin-top: 50px;
@@ -922,7 +927,7 @@ h5 {
 .action:hover,
 .action:focus {
 	-webkit-animation: unset;
-	        animation: unset;
+	animation: unset;
 	color: #ffcc00;
 	text-decoration: none;
 }
@@ -931,8 +936,8 @@ h5 {
 	top: 0;
 	left: 50%;
 	-webkit-transform: translate(-50%, -48%);
-	    -ms-transform: translate(-50%, -48%);
-	        transform: translate(-50%, -48%);
+	-ms-transform: translate(-50%, -48%);
+	transform: translate(-50%, -48%);
 	z-index: -1;
 	width: 250px;
 }
@@ -963,6 +968,10 @@ ul.step-info > li div {
 	overflow: hidden;
 }
 @media (max-width: 575.98px) {
+	h5.animate-typing {
+		font-size: 5vw;
+	}
+	.ac
 	.slogan {
 		height: 150px;
 		overflow: hidden;
