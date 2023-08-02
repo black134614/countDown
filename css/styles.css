@@ -938,7 +938,7 @@ h5 {
 }
 
 div.fb-page {
-	margin: 10px 20px;
+	padding: 10px 20px;
 }
 ul.step-info {
 	list-style: none;
@@ -960,6 +960,7 @@ ul.step-info > li div {
 }
 .slogan {
 	height: 200px;
+	overflow: hidden;
 }
 @media (max-width: 575.98px) {
 	.slogan {
